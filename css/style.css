@@ -1,0 +1,56 @@
+
+
+
+body{max-width:500px; margin:0 auto;}
+
+
+select{width:100%; height:40px; font-size:18px; line-height:40px;}
+
+button{width:100px; height:40px; font-size:18px; line-height:40px; text-align:center;}
+
+
+#start{display:block; width:25%; margin:20px auto 0;}
+
+#out{position:absolute; right:0; height:100%;}
+.back{background:rgba(0,0,0,0.8);}
+
+#preview{position:relative; overflow:hidden;}
+#preview:after{content:"";display:block;clear:both;}
+#preview img{display:block; width:100%;float:left;}
+
+#del{display:block; float:right;}
+#styleConfig{margin:20px 0;}
+
+#modules{position:relative;}
+.module{
+	display: flex;
+	justify-content:space-between;	
+	margin-bottom:10px;
+}
+input{
+	width:20%; 
+	height:40px; 
+	font-size:18px; 
+	line-height:40px;
+	border:2px solid #ccc;
+}
+
+#blocks{position:absolute; width:100%;}
+.block{position:relative; float:left; height:100%;}
+.block .marginX,
+.block .blockWidth{position:absolute;}
+.block .x{height:100%; left:0;}
+.block .y, 
+.block .marginYbottom{position:relative;width:100%;}
+.block .blockWidth{height:100%; right:0;}
+.block .blockHeight{position:absolute;cursor:pointer;}
+
+.w{}
+.h{}
+.x{}
+.y{}
+
+::-webkit-input-placeholder {color:#ccc;}
+::-moz-placeholder          {color:#ccc;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ccc;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ccc;}
